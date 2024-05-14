@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="users/beacss.css">
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <h3>Log In</h3>
+        <form action="" method="POST">
+          {% csrf_token %}
+          {% for field in form %}
+          <p>
+            {{ field.label }}: <br>
+            {{ field }}
+          </p>
+          {% endfor %}
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Sign up here</a></p>
+      </div>
+      <div class="logo-container">
+        <!-- Your logo image or text goes here -->
+        <img src="users/bead.png" alt="Logo"> 
+        <!-- Example: <h1>My Logo</h1> -->
+      </div>
+    </div>
+  </body>
+  

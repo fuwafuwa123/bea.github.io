@@ -1,0 +1,16 @@
+.login-container {
+  display: flex;
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center; /* Center the contents vertically */
+}
+
+.login-form {
+  width: 300px; /* Set the width of the login form */
+}
+
+.logo-container {
+  flex: 1; /* Allow the logo container to grow to take remaining space */
+  text-align: right; /* Align the logo to the right */
+}
+
+/* Add additional styling as needed */

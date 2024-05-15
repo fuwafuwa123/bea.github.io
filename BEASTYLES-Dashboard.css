@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.left-sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 100%;
+    background-color: #FFF;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ccc;
+    padding-top: 30px;
+}
+.left-sideBar ul{
+    list-style-type: none;
+    justify-content: start;
+    padding-left: 25px;
+}
+.left-sideBar ul li{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: space-between;
+}
+.left-sideBar ul li .iconAndNavigation{
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+    column-gap: 10px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.778);
+    position: cursor;
+}
+#navigation{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+#settingsAndAbout{
+    margin-top: 30px;
+    margin-bottom: 320px;
+}
+/* Vector 
+#dashboardIcon{
+    position: absolute;
+    width: 21.75px;
+    height: 21.75px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+*/
+.left-sideBar{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main #header{
+
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 3px;
+    padding-right: 25px;
+
+}
+#dashboardText h1{
+    display: flex;
+    align-items: flex-end;
+}
+#currentDateFull{
+    display: inline-block;
+}
+#dashboardText, #userProfileHeader{
+    height: 1024%;
+    width: 250px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: QuickSand;
+}
+#dashboardText, #userProfileHeader h3{
+    font-family: QuickSand;
+    font-size: 24px;;
+    font-weight: bold;
+}
+#userProfileHeader p{
+    font-size: 10px;
+}
+#userInfoWrapper{
+    margin: 0px;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.profileIcon{
+    width: 60px;
+    height: 60px;
+}
+
+.welcomeTexts{
+    width: 750px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.currentDateFullContainer, .currentTimeContainer{
+    display: flex;
+    align-items: center;
+    
+}
+.currentDateFullContainer h4, .currentTimeContainer h4{
+    padding: 0px;
+    width: fit-content;
+}
+
+#welcomeTextContainer{
+    margin: 0px;
+    padding: 0px 10px 0px 60px;
+}
+.fitText{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+.wrapper{
+    background-color: #d5cce6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+#welcome{
+    font-family: QuickSand;
+    width: 835px;
+    height: 290px;
+    display: flex;
+    padding-left: 25px;
+    column-gap: 60px;
+    border-radius: 15px;
+    background-color: #FFF5EC;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#WelcomeText{
+    color: #C39B7F;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: QuickSand;
+}
+#Name{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: QuickSand;
+}
+#dateAndTimeContainerUnderWelcome h4{
+    margin: 0;
+}
+
+main{
+    width: 1024%;
+}
+body, main{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    height: 100vh;
+    max-width: 1920px;
+    min-width: 1024px;
+    max-height: 1080px;
+    min-height: 768px;
+    
+}
+#mainContent{
+    height: 830px;
+    width: 97%;
+    margin-left: 20px;
+}
+
+#Name,#WelcomeText{
+    display: inline;
+}
+.mainContentBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#calendarWrapper{
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ccc;
+    width: 325px;
+    height: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+}
+#calendarWrapper header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px 12px 25px;
+}
+.currentDateClass{
+    font-weight: 600;
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+#calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+#calendar ul li{
+    width: calc(100%/7);
+}
+#calendar .weeks, #calendar .days{
+    padding: 0;
+}
+#calendar .days{
+    cursor: pointer;
+}
+#calendarWrapper .chevron{
+    display: flex;
+    height: 38px;
+    width: 38px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#calendar header .chevron:hover{
+    background: rgb(174, 174, 174)
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 230px;
+}
+#logo{
+    width:230px
+}
+.selectOrNot{
+    width: 80px;
+    height: 50px;
+    background-color: #ffffff;
+}
+.dashboardIcon{
+    height: 24px;
+    width: 24px;
+    
+}
+.classListIcon{
+    height: 24px;
+    width: 24px;
+    
+}
+.calendarIcon{
+    height:24px;
+    width:24px;
+    margin-right: 5px;
+}
+.repositoryIcon{
+    width:24px;
+    height: 24px;
+    
+}
+.iconAndNavigation{
+    display: flex;
+}
+#navHR{
+    display: flex;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #ccc;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+.mainContentBox .upcomingClassTextContainer{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 3px;
+    display: flex;
+    justify-content: center;
+    width:fit-content;
+    background-color: #FFF5EC;
+    padding: 15px 72px 15px 72px;
+}
+.mainContentBox #upcomingClass .upcomingClassTextContainer h4{
+    font-family: QuickSand;
+    font-weight: bold;
+    font-size: 25px;
+    color: #C39B7F;
+    width:fit-content;
+    height: fit-content;
+    margin: 0;
+}
+#classDetails {
+    margin-top: 10px;
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: drop-shadow(25px 20px #79407D);
+}
+img#cowPurpleImg{
+    width: 100%;
+    height: 165px;
+}
+#upcomingClassName{
+    font-family: QuickSand;
+    font-size: 25px;
+    margin: 10px 0px 10px 0px;
+}
+#upcomingClassSection{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    width: fit-content;
+}
+#upcomingClassRoom{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    width: fit-content;
+}
+#upcomingClassTime{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    width: fit-content;
+}
+.classTime{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+    
+}
+.classTime p{
+    display: inline;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0;
+}
+.textContent{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.timeIcon{
+    margin-right: 5px;
+}
+#upcomingClassSection, #upcomingClassRoom,.classTime, #startTime, #endTime{
+    margin: 5px;
+}
+.alignRight{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+.groupOfPeopleIcon{
+    width: 70px;
+}
+#schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 410px;
+    height: 210px;
+    background-color: white;
+    padding: 30px 20px 30px 20px;
+    background-color: #FFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #ccc;
+}
+#schedule h4{
+    margin: 0;
+    font-family: QuickSand;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#scheduleTable thead tr th{
+    padding: 10px;
+    text-align: center;
+    font-family: QuickSand;
+    width: 120px;
+}
+#scheduleTable tbody tr td{
+    padding: 10px;
+    text-align: left;
+    font-family: Lato;
+    text-align: center;
+}
+#scheduleTable tbody tr > :nth-child(1), #scheduleTable tbody tr > :nth-child(2){
+    font-size: 15px;
+    color: #220950;
+    font-weight: 600;
+}
+#scheduleTable tbody tr > :nth-child(3){
+    font-size: 12px;
+    color: #59468F;
+}
+#events{
+    width: 345px;
+    height: 450px;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #ccc;
+}
+#eventBox{
+    margin: 10px 20px 10px 20px;
+}
+#events h4{
+    margin: 0;
+    font-family: QuickSand;
+    font-size: 25px;
+    font-weight: bold;
+}
+#events .specificEventWithDayBox{
+    margin-top: 25px;
+}
+#events .eventDay{
+    margin: 0;
+    font-family: QuickSand;
+    font-size: 15px;
+    font-weight: 600;
+}
+.specificEvent{
+    background-color: #008078;
+    margin-top: 20px;
+    font-family: QuickSand;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 10px 10px 10px 15px;
+    max-width: 280px;
+    max-height: 55px;
+    border-color: #ccc;
+    color: #fff;
+}
+.specificEvent p{
+    width: fit-content;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+.specificEvent > :nth-child(2){
+    font-size: 10px;
+}
+.schedAndAnnouncement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.announcementClassAndSectionSchedContainer{
+
+    display: flex;
+    height: 160px;
+    border-radius: 15px;
+    border-color: #ccc;
+}
+
+.announcementTextContainer{
+    border-width: 3px;
+    width: 175px;
+    margin: 0px 0px 0px 0px  ;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-right: 15px;
+    border-style: solid;
+    height: 83%;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    resize: none;
+    
+}
+
+
+.announcementTextContainer::placeholder {
+    position: relative;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+}
+.classAndSection{
+    display: flex;
+    justify-content: center;
+    font-family: QuickSand;
+    height: fit-content;
+    align-items: center;
+    width: fit-content;
+    padding-top: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    border-radius: 15px;
+    background-color: white;
+}
+.classAndSection label{
+    font-size: 12px;
+    margin: 0;
+    width: fit-content;
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.classAndSectionAndPostschedule{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.postschedule{
+    display: flex;
+    padding-left: 25px;
+    font-family: QuickSand;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    width: fit-content;
+    padding-right: 25px;
+}
+#post-time{
+    border: none;
+    outline: none;
+}
